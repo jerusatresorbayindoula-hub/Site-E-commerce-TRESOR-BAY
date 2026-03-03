@@ -1,0 +1,1115 @@
+body{
+    background-color:rgb(255, 222, 178);/* ARRIERE PLAN DE TOUTE LA PAGE */
+    font-family:'Roboto', 'Open Sans', Arial, sans-serif;
+    line-height: 1.5em;
+}
+
+*{  /* TOUT QU'IL N'Y AIT PAS D'ESPACE A LINTERIEUR NI A L'EXTERIEUR DE TOUS LES ELEMENTS HTML */
+    padding: 0;
+    margin: 0;
+
+}/*MA BARRE DE RECHERCHE SUR LA BARRE DE NAVIGARION  */
+.nav-link.active {
+ color:maroon;       /* couleur spéciale pour le lien actif */
+  padding: 10px;
+}
+.navbar-menu{
+  display: flex;
+  align-items: center;
+}
+.contpanier{
+  text-shadow: none;
+}
+.contpanierH2{
+  text-shadow: none;
+}
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 12%;
+  gap: 1%;
+  margin-right: 5%;
+}
+
+.search-bar i {
+  position: absolute;
+  left: 10px;
+  color: #77462e;
+
+}
+.search-bar button:hover{
+   background-color: #b7845d;
+   box-shadow: 2px 2px #2c2c2c;
+   transform: translateX(-10px) scale(1.1);
+}
+.search-bar input[type="text"] {
+  padding: 8px 20px 6px 35px; /* espace pour la loupe */
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  border-radius: 10px;
+}
+
+.search-bar button {
+  padding: 8px 20px;
+  border: none;
+  background-color: #884e2e;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.search-bar button :hover{
+  background-color: #ded6d6;
+  box-shadow: 5px 5px 5px 5px rgba(82, 79, 79, 0.1);
+}
+.navbar-acc{
+    gap: 7%;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 0%;
+    box-shadow: 5px 5px 5px 5px rgba(82, 79, 79, 0.1);
+    border-radius: 7px;
+    background-color: blanchedalmond;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.navbar-acc ul li a{
+   transition:0.1s ease-in-out;
+}
+.navbar-acc ul li a:hover {   /* POUR CREER UN EFFET DE SURVOL SUE LE MENU DE NAVIGATION DE L'ACCUEIL */
+    color:maroon;               /* texte devient blanc */
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    transform: translateY(-10px) scale(1.1);  
+    background-color: #edac7a;
+
+
+}
+
+nav ul li a:hover {   /* POUR CREER UN EFFET DE SURVOL SUE LE MENU DE NAVIGATION */
+    color: whitesmoke;                 /* texte devient blanc */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: underline;
+
+
+
+}
+/* =========================================================================================================== */
+.banner {      /* MON IMAGE D'ACCUEIL */
+   position: relative; /* Permet de placer les calques en absolu à l’intérieur */
+   height: 90vh; /* Hauteur du banner (90% de la hauteur de l’écran) */
+   border-radius: 10px; /* Coins arrondis */
+   overflow: hidden; /* Cache ce qui dépasse du banner */ 
+   text-align: center; /* Centre le texte */ 
+   color: white; /* Texte en blanc */ 
+   margin-left: 5px;
+   margin-right: 5px;
+   box-shadow: 5px 5px 5px rgba(82, 79, 79, 0.1); /* Ombre autour du banner */ 
+}
+
+/* Calques d’images */
+.bg-slide {
+  position: absolute;        /* Superposé dans le banner */
+  background-size: cover;
+  object-fit: cover;
+  top: 0; left: 0;           /* Collé en haut à gauche */
+  width: 100%;               /* Prend toute la largeur */
+  height: 100%;              /* Prend toute la hauteur */
+  background-size: cover;    /* L’image couvre toute la zone */
+  background-position: center; /* Centrée */
+  opacity: 0;                /* Invisible au départ */
+  animation: fade 12s infinite; /* Animation répétée toutes les 12 secondes */
+}
+
+/* Chaque image avec son propre fichier */
+.slide1 {
+  background-image: url('../IMAGE/11.png'); /* Première image */
+  animation-delay: 0s;                      /* Démarre immédiatement */
+}
+.slide2 {
+  background-image: url('../IMAGE/BANNER90.png'); /* Deuxième image */
+  animation-delay: 4s;                      /* Démarre après 4 secondes */
+}
+.slide3 {
+  background-image: url('../IMAGE/11sec.png'); /* Troisième image */
+  animation-delay: 8s;                      /* Démarre après 8 secondes */
+}
+.slide4 {
+  background-image: url('../IMAGE/BANNERT.png'); /* quatrième image */
+  animation-delay: 12s;                      /* Démarre après 12 secondes */
+}
+.slide5 {
+  background-image: url('../IMAGE/BANNER20.png'); /* cinquième image */
+  animation-delay: 16s;                      /* Démarre après 16 secondes */
+}
+.slide6 {
+  background-image: url('../IMAGE/BANNER30.png'); /* Sixième image */
+  animation-delay: 20s;                      /* Démarre après 20 secondes */
+}
+.slide7 {
+  background-image: url('../IMAGE/BANNER50.png'); /* 7ème image */
+  animation-delay: 24s;                      /* Démarre après 24 secondes */
+}
+.slide8 {
+  background-image: url('../IMAGE/BANNER80.png'); /* 8ème image */
+  animation-delay: 28s;                      /* Démarre après 28 secondes */
+}
+.slide9 {
+  background-image: url('../IMAGE/BANNERRRR.png'); /* 8ème image */
+  animation-delay: 32s;                      /* Démarre après 28 secondes */
+}
+/* Animation de fondu */
+@keyframes fade {
+  0%   { opacity: 0; }   /* Invisible */
+  8%   { opacity: 1; }   /* Apparition progressive */
+  33%  { opacity: 1; }   /* Reste visible */
+  41%  { opacity: 0; }   /* Disparaît */
+  100% { opacity: 0; }   /* Invisible jusqu’au prochain cycle */
+}
+
+/* Le contenu reste au-dessus des images */
+.container-fluid {
+  position: relative; /* Position normale */
+  
+}
+
+.banner a{
+    font-family:'Roboto','Open Sans', Arial, sans-serif;
+} 
+
+h2{
+    font-size: 50px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+ul{   /* LISTE DU MENU DE NAVIGATION */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;  /* POUR ENLEVER LES PUCES D'UNE LISTE */
+    align-items: center;
+}
+li,a{           /* ELEMENTS DE LISTE ET LIENS DU MENU DE NAVIGATION  */
+    font-size: 20px;
+    font-weight: bold;/* RENDRE UN ELEMENT IMPORTANT (METTRE EN GRAS) */
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(6, 38, 125);
+    opacity: 0;/* Animation */
+    transform: translateY(30px);
+    animation: fadeSlide 1s forwards ease-in-out;
+}
+/* Effet cascade pour que le texte apparaisse avec un petit décalage */
+.li a:nth-child(4) { animation-delay: 0.9s; }
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  } 
+
+}
+li:hover , a:hover{ /* POUR FAIRE UN SURVOL SUR LA LISTE DU MENU NAVBAR*/
+    color: white;
+    cursor:pointer; /* POU CHANGER LE FORME DES CURSEUR */
+
+}
+.navbar{     /* BARRE EDE NAVIGATION */
+    display: flex;
+    align-items: center;
+    gap: 7%;
+    margin: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(82, 79, 79, 0.1);
+    border-radius: 7px;
+    background-color: blanchedalmond;
+   
+}
+iframe {
+  border-radius: 10px;
+  border: 5px solid grey;
+  padding: 0;
+}
+.navbar ul li a {
+  transition:0.1s ease-in-out;
+}
+.navbar ul li a:hover{
+  transform: translateY(-10px) scale(1.1); 
+  background-color: #edac7a;
+}
+nav ul li a:hover {   /* POUR CREER UN EFFET DE SURVOL SUE LE MENU DE NAVIGATION D'AUTRES PAGES*/
+    color: maroon;                 /* texte devient blanc */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.login a{
+  font-weight: 1  ;
+  color: black;
+  display: flex;
+  font-size: 14px;
+}
+.login a:hover{
+  color: white;
+}
+h1{     /* TITRE : BIENVENUE DANS MA BOUTIQUE  */
+    font-size: 65px;
+    color:white;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 90px;
+    margin-left: -6%;  
+    opacity: 0;/* DISPARITION */
+    transform: translateY(30px);
+    animation: fadeSlide 1s forwards ease-in-out;
+    text-shadow: 7px 6px 3px  #303030;
+}
+/* Effet cascade pour que le texte apparaisse avec un petit décalage */
+h1:nth-child(4) { animation-delay: 0.9s; }
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.slogan{     /* MON SLOGAN DE L'ACCUEIL */
+    font-size: 25px;
+    align-items: center;
+    color: #ffffff;
+    margin-left: 2%;
+    opacity: 0;/* Animation */
+    transform: translateY(30px);
+    animation: fadeSlide 1s forwards ease-in-out;
+    text-shadow: 5px 5px 3px  #303030;
+}
+/* Effet cascade pour que le texte apparaisse avec un petit décalage */
+.slogan:nth-child(6) { animation-delay: 0.10s; }
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+.logo-centre{       /* MON LOGO */
+    align-items: center;
+    margin-left: 1%;
+    margin-top: 1%;
+    opacity: 0;/* Animation */
+    transform: translateY(30px);
+    animation: fadeSlide 1s forwards ease-in-out;
+
+}
+/* Effet cascade pour que le texte apparaisse avec un petit décalage */
+.logo-centre:nth-child(1) { animation-delay: 0.9s; }
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+    
+}
+.logoAsso{    /* LOGO DE L'ASSOCIATION */
+    margin-left: 10px;
+    padding: 5px;
+    opacity: 0;/* Animation */
+    transform: translateY(30px);
+    animation: fadeSlide 1s forwards ease-in-out;
+    display: flex;
+    gap: 10%;
+}
+/* Effet cascade pour que le texte apparaisse avec un petit décalage */
+.logoAsso:nth-child(1) { animation-delay: 0.9s; }
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+    
+}
+.pied-de-page{    /* PIED DE PAGE */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 30px;
+}
+.button-voir{         /* BUTTON "VOIR" */
+   background-color:rgb(232, 182, 117);
+    color: white;
+    border-radius: 15px;
+    padding: 15px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    justify-content: center;
+
+}
+.scroll{ /* LE TEXTE QUI DEFILE SUR MON MON BANNER */
+  width: 19%;
+  height: 3px;
+  background-color: transparent;
+  border: none;
+  align-items :start;
+  box-shadow: none;
+  margin-top: 20px;
+}
+.button-achat{  /* BOUTON AJOUTER */
+    background-color: rgb(232, 182, 117);
+    color: white;
+    border-radius: 15px;
+    padding: 15px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    justify-content: center;
+}
+.button-banner{ /* BOUTON DECOUVRIR */
+    background: linear-gradient(to bottom, #cbcaca, #ba6b22);
+    color: white;
+    border-radius: 9px;
+    margin-left: 2%;
+    margin-top: 20%;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 2%; 
+    opacity: 0;/* Animation */
+    animation: fadeSlide 1s forwards ease-in-out;
+    transition:0.3s;
+    box-shadow: 5px 5px 3px #2c2c2c;
+    
+}
+/* Effet zoom et changement de couleur */
+.button-banner:hover {
+  color: black;
+  transform:  translateY(-10px) scale(1.5);
+  box-shadow: 15px 15px 15px 15px rgba(0,0,0,0.2);
+}
+
+/* Effet cascade pour que le texte apparaisse avec un petit décalage */
+.li a:nth-child(4) { animation-delay: 0.9s; };
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.button-banner a{
+    color: white;
+    transform: scale(2); /* agrandissement */
+
+    
+}
+.products-cards{    /* CARTES DES PRODUITS   */
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.products-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;   
+}
+.card-body {
+  object-fit: cover;
+  background-color: rgb(255, 233, 204);
+  border-radius: 15px;
+  padding: 20px;
+  opacity: 0; /* invisible au départ */
+  animation: fadeSlide 1s forwards ease-in-out;
+  transition:0.3s ease-out;
+}
+/* Effet zoom + déplacement au survol */
+.card-body:hover {
+  background-color: rgb(255, 247, 237);
+  transform: translateY(-10px) scale(1.09); /* zoom + monte légèrement */
+  box-shadow: 4px 4px 1px 0px  #ffeabc ,8px 8px 1px 0px  #fbe09a,12px 12px 1px 0px  #fdd778,
+  16px 16px 1px 0px  #f2cd6e; 
+
+}
+/* Effet cascade */
+.card-body:nth-child(1) { animation-delay: 0s; }
+.card-body:nth-child(2) { animation-delay: 0.3s; }
+.card-body:nth-child(3) { animation-delay: 0.6s; }
+.card-body:nth-child(4) { animation-delay: 0.9s; }
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.categories-cards {
+  display: flex;
+  justify-content: space-around; /* un seul suffit */
+}
+.categories-cards{   /* CARTES DES CATEGORIES  */
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+.hero{   /* CONTIENT TOUT CE QUI SE TROUVE DANS LE FIELDSET DE L'ACCUEIL  */
+    display: flex;
+    gap:160px;
+    padding-top: 20px;
+    
+}
+.heroTexte{  /* LE TEXTE DE L'ASSOCIATION */
+    text-align: justify;
+    padding-left: 20px;
+    line-height: 1.5em;
+    opacity: 0;/* Animation */
+    transform: translateY(30px);
+    animation: fadeSlide 1s forwards ease-in-out;
+}
+
+/* Effet cascade pour que le texte apparaisse avec un petit décalage */
+.heroTexte:nth-child(2) { animation-delay: 0.9s; }
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+.titre-asso{     /* NOTRE ASSOCIATION */
+    color:chocolate;
+    text-align: left;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-bottom: -50px;
+    opacity: 0;/* Animation */
+    transform: translateY(30px);
+    animation: fadeSlide 1s forwards ease-in-out;
+}
+
+/* Effet cascade pour que le texte apparaisse avec un petit décalage */
+.heroTexte:nth-child(2) { animation-delay: 0.9s; }
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.button-asso{ /* BOUTON "EN SAVOIR PLUS" DE L'ASSOCIATION */
+  background: linear-gradient(to bottom, #b5b1b1, #0743e9);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s;
+}
+.button-asso:hover{
+   box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+}
+fieldset{   /* CONTOUR  */
+  border: chocolate solid 2px;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-right: 10px;
+  padding-top: 3%;
+  background-color:blanchedalmond;
+  box-shadow: 5px 5px 5px rgba(75, 74, 74, 0.1);
+  opacity: 0;/* Animation */
+  transform: translateY(30px);
+  animation: fadeSlide 1s forwards ease-in-out;
+  padding-bottom: 3%;
+}
+
+/* Effet cascade pour que le texte apparaisse avec un petit décalage */
+fieldset:nth-child(4) { animation-delay: 0.9s; }
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+h2{   /* LES DEUX TITRES H2 SUR LA PAGE D'ACCUEIL */
+    text-align: center;
+    color: chocolate;
+    font-size: 40px;
+    padding-top: 25px;
+     opacity: 0;/* Animation */
+    transform: translateY(30px);
+    animation: fadeSlide 1s forwards ease-in-out;
+    text-shadow: 3px 3px #563f2e;
+}
+
+/* Effet cascade pour que le texte apparaisse avec un petit décalage */
+.heroTexte:nth-child(2) { animation-delay: 0.9s; }
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+}
+input{
+  padding-left: 5px;
+}
+.contactASSO{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+  padding-left: -7%;
+  margin: 0%;
+}
+
+img{
+    border-radius: 15px;
+    opacity: 0;/* Animation */
+    transform: translateY(30px);
+    animation: fadeSlide 1s forwards ease-in-out;
+}
+
+/* Effet cascade pour que le texte apparaisse avec un petit décalage */
+.heroTexte:nth-child(2) { animation-delay: 0.9s; }
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ============================ TABLEAU =============================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgb(200, 150, 100, 0.1);
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #e0cfc0;
+    text-align: left;
+    font-family:'Roboto', 'Open Sans', Arial, sans-serif;
+}
+th {
+    background-color: #f5e3d0;
+    color: #7a4e2d;
+}
+td {
+    background-color: #fffdf9;
+}
+/* ========================================================================================= */
+form{   /* FORMULAIRE DU PANIER */
+    margin: 20px;
+    font-weight: bold;
+}
+.button-panier {  /* BOUTON PANIER */
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  background: linear-gradient(to bottom, #ded6d6, #575656);
+  border: none;
+  border-top: 3px solid green;
+  border-radius: 0 0 0.2em 0.2em;
+  font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+  font-size: 1em;
+  transition: 0.3s ease-in-out;
+}
+.button-panier:hover{
+   animation: wiggle 1s ease-in-out; /*transition douce (ease-in-out), et qui se répète à l’infini. */
+   transform:  translate(-10PX) scale(1.1);
+}
+/* ETAPES ET LES EFFETS DE TRANSITIONS */
+@keyframes wiggle{
+   0% {
+        opacity: 1;
+        } 70% {
+        opacity: 0.3;
+        } 100% {
+        opacity: 1;
+        }
+}
+.contact-info{  /* MES COORDONNEES */
+    font-size: 20px;
+    margin-left: 20px;
+}
+.container-mention{     /* TOUTES LES MENTIONS LEGALES */
+    margin: 30px;
+    margin-bottom: 10%;
+}
+.container-footer-fluid{
+    background-color:rgb(248, 208, 148);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+.button-retour {  /* BOUTON DE RETOUR A L'ACCUEIL SUR LA PAGE D'ERREUR 404 */
+    background: linear-gradient(to bottom, #d1c9c9, #2c539c);
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 30%;
+    color: rgb(212, 212, 212);
+    border-radius: 9px;
+    margin-left:41%;
+    margin-top: 10%;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 3%; 
+    transition: 0.3s ease-in-out;
+}
+/* Effet zoom et changement de couleur */
+.button-retour:hover {
+  color: black;
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 15px 15px 15px 15px rgba(0,0,0,0.2);
+}
+
+/* Effet cascade pour que le texte apparaisse avec un petit décalage */
+.li a:nth-child(4) { animation-delay: 0.9s; };
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.container-prive{    /* TEXTE DE POLITIQUE DE CONFIDENTIALITÉ */
+    margin: 30px;
+}
+.prix-total{        /* CHAMP POUR INSERER LE PRIX TOTAL DANS LE PANIER */
+    text-align: end;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 1px;
+}
+.container-vente{    /* POLITIQUE DE VENTE */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 8%;
+    border-radius: 10px;
+}
+.info-asso{
+    margin-left: 20px ;
+    margin-right: 20px;
+}
+.carte-formulaire{
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+.carteASSO{
+  border-radius: 10px;
+  padding: 0 ;
+}
+.button-retour-valid{
+    background: linear-gradient(to bottom, #d1c9c9, #2f57b5);
+    border-radius: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+    
+}
+.button-retour-valid a{
+    color:#ccc;
+}
+.button-retour-valid a:hover{
+    color: #2c2c2c;
+}
+.button-retour-valid:hover{
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 15px 15px 15px 15px rgba(0,0,0,0.2);
+
+}
+
+.etoile{
+  color: rgb(55, 55, 55);
+}
+.cookie-banner {
+  position: fixed;        /* Fixe la bannière en bas de l’écran, même quand on scrolle */
+  bottom: 0;              /* Place la bannière collée au bas de la fenêtre */
+  left: 0;                /* Aligne la bannière à gauche */
+  right: 0;               /* Aligne la bannière à droite (elle prend toute la largeur) */
+  background: #303030;       /* Couleur de fond gris foncé */
+  color: #fff;            /* Texte en blanc pour contraste */
+  padding: 15px;          /* Ajoute de l’espace intérieur autour du texte */
+  text-align: center;     /* Centre le texte et les boutons horizontalement */
+  font-size: 14px;        /* Taille du texte */
+}
+
+.cookie-banner a {
+  color: #4db8ff;         /* Couleur bleue pour les liens */
+  text-decoration: underline; /* Souligne le lien pour le rendre visible */
+}
+
+.cookie-banner button {
+  margin: 0 5px;          /* Ajoute un petit espace horizontal entre les boutons */
+  padding: 8px 12px;      /* Ajoute de l’espace intérieur dans les boutons */
+  border: none;           /* Supprime la bordure par défaut des boutons */
+  border-radius: 4px;     /* Arrondit légèrement les coins des boutons */
+  cursor: pointer;        /* Change le curseur en “main” au survol */
+}
+
+.accept {
+  background: green;      /* Bouton “Accepter” en vert */
+  color: white;           /* Texte du bouton en blanc */
+}
+
+.accept:hover{
+  background-color: #e0d6d6b6;
+}
+.decline {
+  background: red;        /* Bouton “Refuser” en rouge */
+  color: white;           /* Texte du bouton en blanc */
+}
+.decline:hover{
+  background-color: #e0d6d6b6;
+}
+.QR{  /* MON CODE QR */
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3%;
+  background-color: rgb(248, 208, 148);
+}   
+.login button{
+  padding-right: 20%;
+  padding-bottom: 9px;
+  padding-left: 20%;
+  padding-top: 9px;
+  background-color:rgb(245, 189, 105);
+  color: #303030;
+  border-radius: 50px;
+  margin-right: 10%;
+  font-size: 13px;
+  align-items: center;
+  display: flex;
+  border: none;
+  transition: 0.3s ease-in-out;
+  animation: fadeSlide 1s forwards ease-in-out;
+}
+/* Effet cascade pour que le texte apparaisse avec un petit décalage */
+.li a:nth-child(4) { animation-delay: 0.9s; }
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  } 
+}
+.login button:hover{
+   color: white;
+   background-color: #a19d9d;
+   box-shadow: 5px 5px 3px #424141;
+   transform: translateX(-10px) scale(1.01);
+}
+.pagelogin{
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 350px;
+      margin-left: 35%;
+    }
+ 
+    .titlelogin {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .btn {
+      display:block;
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .google { 
+      color: black; 
+      align-items: center;
+      background-color: white;
+      font-size: 15px;
+      border: 1px solid black; 
+    }
+    .google:hover{
+      background-color: rgb(238, 95, 95);
+      color: white;
+    }
+    img.googlelogo {
+      animation: none;
+      opacity: 1;
+      height:30px;
+      width:30px;
+      transform: none;
+      transition: none;
+      animation: none !important;
+    }
+    .apple { 
+      border: 1px solid black; 
+      color:black; 
+      background-color: white;
+      font-weight:500;
+      font-size: 15px;
+    }
+    .apple:hover{
+      color: white;
+      background-color: #424141;
+    }
+    .facebook { 
+      border: 1px solid black; 
+      color:black; 
+      background-color: white;
+      font-weight:500;
+      font-size: 15px;
+    }
+    .facebook:hover{
+      background-color: #0263c3;
+      color: white;
+    }
+    .email-link a{
+      display: block;
+      margin: 15px 0;
+      color: #0073e6;
+      text-decoration: none;
+    }
+    .email-link a:hover{
+      color: green ;
+    }
+    .login-link {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .login-link a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+/* ==============================================PAGE DE CONNEXION============================ */
+    .container {
+      background: #fff;
+      width: 360px;
+      padding: 30px;
+      margin-left: 35%;
+      margin-top: 3%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .logo {
+      margin-bottom: 20px;
+    }
+    .logo img {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .account {
+      display: flex;
+      align-items: center;
+      border: 1px solid #dadce0;
+      border-radius: 4px;
+      padding: 10px;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+    .account:hover {
+      background-color: #f8f9fa;
+    }
+    .avatar {
+      background-color: #4285f4;
+      color: #fff;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .account-info {
+      text-align: left;
+    }
+    .account-info .name {
+      font-size: 14px;
+      color: #202124;
+    }
+    .account-info .email {
+      font-size: 12px;
+      color: #5f6368;
+    }
+    .other {
+      font-size: 14px;
+      color: #1a73e8;
+      cursor: pointer;
+    }
+    .other:hover{
+      text-decoration: underline;
+    }
+    .footer {
+      font-size: 12px;
+      color: #5f6368;
+      margin-top: 20px;
+    }
+    .footer a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    .footer a:hover{
+      text-decoration: underline;
+    }
+    /* PAGE DE CONNEXION FACEBOOK */
+     .cont{
+      text-align: center;
+    }
+    .login-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      width: 350px;
+      text-align: center;
+      margin-left: 35%;
+      margin-top: 4%;
+    }
+
+    .login-box h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #1c1e21;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #1877f2;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .login-box button:hover {
+      background-color: #145db2;
+    }
+
+    .login-box a {
+      display: block;
+      margin-top: 15px;
+      color: #1877f2;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .login-box a:hover {
+      text-decoration: underline;
+    }
+
+    .create-account {
+      margin-top: 20px;
+      background-color: #42b72a;
+      color: white;
+      font-weight: bold;
+    }
+
+    .create-account:hover {
+      background-color: #36a420;
+    }

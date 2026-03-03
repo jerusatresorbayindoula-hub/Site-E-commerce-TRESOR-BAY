@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥐Site E-commerce | Saveur Solidaire</title>
+    <link rel="stylesheet" href="STYLE/monsite.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Montserrat&family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- LA NAVIGATION -->
+     <nav class="navbar-acc">
+           
+            <!-- LOGO DE L'ASSOCIATION -->
+          <div class="logoAsso">
+               <img src="IMAGE/logo-asso.png" alt="logo" width="80px" height="60px" title="logo de l'association" >
+          </div>
+         <form action="produits.html" method="get">   
+          <div class="search-bar"> 
+                <i class="fa-solid fa-magnifying-glass" style="font-size: 15px; color: rgb(127, 122, 122);"></i>
+                <input type="text"  placeholder="Rechercher..."> 
+                <button>Search</button> 
+            </div>
+      </form>
+       <!-- MENU DE NAVIGATION -->
+        <div class="navbar-menu">
+          <ul style="gap: 30px;">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" title="page d'accueil">Accueil</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" aria-current="page" href="categories.html" title="page categories">Catégories</a>
+            </li>
+             <li class="nav-item">
+               <a class="nav-link" aria-current="page" href="produits.html" title="page produits">Produits</a>
+            </li>
+             <li class="nav-item">
+               <a class="nav-link" aria-current="page" href="panier.html" title="page panier">Panier</a>
+            </li>
+             <li class="nav-item">
+               <a class="nav-link" aria-current="page" href="contact.html" title="page contact">Contacts</a>
+            </li><br><br>
+          </ul>
+           <div class="login">
+             <button>
+                <a href="pagelogin.html">
+                    <div>Se</div>
+                    <div>&nbsp;connecter</div> 
+                </a>
+             </button>
+          </div>
+         </div>
+       </div>
+    </nav>
+  </header>
+  <br>
+  <main>
+       <section class="container-banner">
+            <div class="container-fluid">
+                <div class="banner">
+                    <div class="banner">
+                         <div class="bg-slide slide1"></div> 
+                         <div class="bg-slide slide2"></div>
+                         <div class="bg-slide slide3"></div>
+                         <div class="bg-slide slide4"></div>
+                         <div class="bg-slide slide5"></div>
+                         <div class="bg-slide slide6"></div>
+                         <div class="bg-slide slide7"></div>
+                         <div class="bg-slide slide8"></div>
+                         <div class="bg-slide slide9"></div>
+                    <div class="container-fluid">
+                        <!-- MON LOGO -->
+                        <div class="image-container">
+                            <img src="IMAGE/logoparfait3.png" alt="Logo" class="logo-centre" width="13%" height="100px" title="saveurs solidaires">
+                        </div><br><br><br>
+                        <h1><b>Saveurs fraîches, plaisir garanti !</b></h1><br><br><br>
+                        <p class="slogan"><b>Une gourmandise, un sourire, un geste solidaire !</b></p><br><br><br>
+                        <a href="produits.html" class="button-banner">Découvrir &nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+                       <fieldset class="scroll"> <marquee behavior="scroll" direction="right" scrollamount="5"><p style="text-align: left;margin-top: 0%;font-family:'Roboto', 'Open Sans', Arial, sans-serif;padding-bottom: 20%;color: aliceblue;"><i class="fas fa-shipping-fast" style="color: rgb(225, 148, 65);box-shadow: 15px 15px 15px 15px rgba(0,0,0,0.2);font-size: 155%;padding-bottom: 3%;"></i>  Livraison gratuite</p></marquee></fieldset>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PARTIE PRODUITS PHARES -->
+        <section class="container-products" id="produits">
+            <h2>Nos produits phares :</h2><br>
+                <div class="products-grid">
+                    <div class="products-cards">
+                      <div class="card-body">
+                           <img src="IMAGE/painchocolat2.jpg" alt="pain au chocolat" width="250px" height="200px"><br><br>
+                           <p><b>croissants au chocolat</b></p><br>
+                           <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i> <!-- étoile à moitié vide -->
+                          </div>
+                          <br>
+                           <p>Prix : <b style="color:green;">500 XFA</b></p><br><br>
+                           <a href="croissantchocolat.html" class="button-voir"><i class="fa-solid fa-eye fa-beat"></i></a>
+                           <a href="panier.html" class="button-achat"><i class="fa-solid fa-cart-arrow-down fa-beat"></i></a><br><br>
+                      </div>
+                      <div class="card-body">
+                         <img src="IMAGE/muffin.jpg" alt="muffins" width="250px" height="200px"><br><br>
+                         <p><b>Muffins</b></p><br>
+                          <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i> <!-- étoile vide -->
+                          </div>
+                          <br>
+                         <p>Prix : <b style="color:green;">700 XFA</b></p><br><br>
+                         <a href="muffins.html" class="button-voir"><i class="fa-solid fa-eye fa-beat"></i></a>
+                         <a href="panier.html" class="button-achat"><i class="fa-solid fa-cart-arrow-down fa-beat"></i></a><br><br>
+                      </div>
+                      <div class="card-body">
+                         <img src="IMAGE/painraisins.jpg" alt="pain aux raisin" width="250px" height="200px"><br><br>
+                         <p><b>Pains aux raisins</b></p><br>
+                          <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i> <!-- étoile à moitié vide -->
+                          </div>
+                          <br>
+                         <p>Prix : <b style="color:green;">750 XFA</b></p><br><br>
+                         <a href="painraisin.html" class="button-voir"><i class="fa-solid fa-eye fa-beat"></i></a>
+                         <a href="panier.html" class="button-achat"><i class="fa-solid fa-cart-arrow-down fa-beat"></i></a><br><br>
+                      </div>
+                     <div class="card-body">
+                         <img src="IMAGE/27.jpg" alt="torsadee" width="250px" height="200px"><br><br>
+                         <p><b>Torsadées</b></p><br>
+                         <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i> <!-- étoile à moitié vide -->
+                          </div>
+                          <br>
+                         <p>Prix : <b style="color:green;">1000 XFA</b></p><br><br>
+                         <a href="torsade.html" class="button-voir"><i class="fa-solid fa-eye fa-beat"></i></a>
+                         <a href="panier.html" class="button-achat"><i class="fa-solid fa-cart-arrow-down fa-beat"></i></a><br><br>
+                      </div>
+                    </div>         
+                </div><br>
+                <div class="products-grid">
+                    <div class="products-cards">
+                      <div class="card-body">
+                           <img src="IMAGE/madeleine1.jpg" alt="madeleines" width="250px" height="200px"><br><br>
+                           <p><b>Madeleines</b></p><br>
+                           <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i> <!-- étoile vide -->
+                          </div>
+                          <br>
+                           <p>Prix : <b style="color:green;">100 XFA</b></p><br><br>
+                           <a href="madeleines.html" class="button-voir"><i class="fa-solid fa-eye fa-beat"></i></a>
+                           <a href="panier.html" class="button-achat"><i class="fa-solid fa-cart-arrow-down fa-beat"></i></a><br><br>
+                      </div>
+                      <div class="card-body">
+                         <img src="IMAGE/biscuitS4.jpg" alt="sablé" width="250px" height="200px"><br><br>
+                         <p><b>Sablés</b></p><br>
+                         <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i> <!-- étoile vide -->
+                          </div>
+                          <br>
+                         <p>Prix : <b style="color:green;">250 XFA</b></p><br><br>
+                         <a href="sables.html" class="button-voir"><i class="fa-solid fa-eye fa-beat"></i></a>
+                         <a href="panier.html" class="button-achat"><i class="fa-solid fa-cart-arrow-down fa-beat"></i></a>
+                      </div>
+                      <div class="card-body">
+                         <img src="IMAGE/painbi.jpg" alt="pain au chocolat bicolore" width="250px" height="200px"><br><br>
+                         <p><b>Pains au chocolat bicolores</b></p><br>
+                         <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i> <!-- étoile à moitié vide -->
+                          </div>
+                          <br>
+                         <p>Prix : <b style="color:green;">750 XFA</b></p><br><br>
+                         <a href="painschocolatbicolores.html" class="button-voir"><i class="fa-solid fa-eye fa-beat"></i></a>
+                         <a href="panier.html" class="button-achat"><i class="fa-solid fa-cart-arrow-down fa-beat"></i></a>
+                      </div>
+                     <div class="card-body">
+                         <img src="IMAGE/cookie222.jpg" alt="cookies" width="250px" height="200px"><br><br>
+                         <p><b>Cookies</b></p><br>
+                         <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i> <!-- étoile à moitié vide -->
+                          </div>
+                          <br>
+                         <p>Prix : <b style="color:green;">600 XFA</b></p><br><br>
+                         <a href="cookies.html" class="button-voir"><i class="fa-solid fa-eye fa-beat"></i></a>
+                         <a href="panier.html" class="button-achat"><i class="fa-solid fa-cart-arrow-down fa-beat"></i></a>
+                      </div>
+                    </div>         
+                </div>
+        </section><br><br>
+        <!-- PARTIE TEXTE ET IMAGE ASSOCIATION -->
+        <section class="container-champtext">
+            <fieldset>
+                <div class="hero">
+                    <div class="heroTexte">
+                        <p class="titre-asso" style="text-shadow: 2px 3px #563f2e;"><b>Notre association</b></p><br><br><br><br>
+                          <p>
+                          L’association Vivre Ensemble Madesahel vient s’installer en Janvier 2002 
+                          à Mbour et met en route un séjour de rupture. Remobiliser et revaloriser 
+                          les jeunes français en difficulté est le premier principe, lors d’un
+                          séjour permettant de créer une coupure de neuf mois avec leur quotidien,
+                        en s’immergeant dans le mode de vie africain .En vue de remercier le pays de 
+                        ce précieux enrichissement apporté aux adolescents Français, la directrice,
+                         madame Michèle Buron décide un an plus tard d’accueillir des nourrissons en danger. <br><br><br>
+                        <a href="infos_asso.html" class="button-asso">En savoir plus...</a>
+                    </p>
+                    </div>
+                    <div class="heroImage">
+                        <img src="IMAGE/imasso.jpg" alt="" width="450px" height="300px" style="border-radius: 15px;object-fit: cover;">
+                    </div>   
+               </div><br>  
+            </fieldset>
+        </section>
+        <!-- LES CARTEGORIES DES PRODUITS -->
+        <section class="container-categories">
+            <h2>Quelques catégories :</h2><br>
+             <div class="categories-grid">
+                    <div class="categories-cards">
+                        <div class="card-body">
+                           <img src="IMAGE/croissant2.jpg" alt="Croissant" width="250px" height="200px"><br><br>
+                           <p><b>Viennoiseries</b></p><br>
+                           <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i> <!-- étoile à moitié vide -->
+                          </div>
+                          <br><br>
+                           <a href="categoriesviennoiseries.html" class="button-voir"><i class="fa-solid fa-eye fa-beat"></i></a>
+                           <a href="panier.html" class="button-achat"><i class="fa-solid fa-cart-arrow-down fa-beat"></i></a>
+                      </div>
+                      <div class="card-body">
+                         <img src="IMAGE/Sandwich.jpg" alt="Croissant" width="250px" height="200px"><br><br>
+                         <p><b>Sandwicheries</b></p><br>
+                          <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i> <!-- étoile vide -->
+                          </div>
+                          <br><br>
+                         <a href="categoriesSandwicheries-boulangeries.html" class="button-voir"><i class="fa-solid fa-eye fa-beat"></i></a>
+                         <a href="panier.html" class="button-achat"><i class="fa-solid fa-cart-arrow-down fa-beat"></i></a>
+                      </div>
+                     <div class="card-body">
+                         <img src="IMAGE/Chocolatsetpralines.jpg" alt="Croissant" width="250px" height="200px"><br><br>
+                         <p><b>Chocolateries</b></p><br>
+                         <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i> <!-- étoile à moitié vide -->
+                          </div>
+                          <br><br>
+                         <a href="categorieschocolateries.html" class="button-voir"><i class="fa-solid fa-eye fa-beat"></i></a>
+                         <a href="panier.html" class="button-achat"><i class="fa-solid fa-cart-arrow-down fa-beat"></i></a>
+                      </div>
+                       <div class="card-body">
+                         <img src="IMAGE/glacess.jpg" alt="Croissant" width="250px" height="200px"><br><br>
+                         <p><b>Glaceries</b></p><br>
+                          <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i> <!-- étoile vide -->
+                          </div>
+                          <br>
+                         <a href="categoriesglaceries.html" class="button-voir"><i class="fa-solid fa-eye fa-beat"></i></a>
+                         <a href="panier.html" class="button-achat"><i class="fa-solid fa-cart-arrow-down fa-beat"></i></a>
+                      </div>
+                    </div>
+              </div> 
+              <br>
+              <div class="categories-grid">
+                    <div class="categories-cards">
+                        <div class="card-body">
+                           <img src="IMAGE/patisse.jpg" alt="Croissant" width="250px" height="200px"><br><br>
+                           <p><b>Patisseries</b></p><br><div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i> <!-- étoile à moitié vide -->
+                          </div>
+                          <br><br>
+
+                           <a href="categoriespatisseries.html" class="button-voir"><i class="fa-solid fa-eye fa-beat"></i></a>
+                           <a href="panier.html" class="button-achat"><i class="fa-solid fa-cart-arrow-down fa-beat"></i></a>
+                      </div>
+                      <div class="card-body">
+                         <img src="IMAGE/biscuitsss.jpg" alt="Croissant" width="250px" height="200px"><br><br>
+                         <p><b>Biscuiteries</b></p><br>
+                         <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i> <!-- étoile à moitié vide -->
+                          </div>
+                          <br><br>
+                         <a href="categoriesbiscuiteries.html" class="button-voir"><i class="fa-solid fa-eye fa-beat"></i></a>
+                         <a href="panier.html" class="button-achat"><i class="fa-solid fa-cart-arrow-down fa-beat"></i></a>
+                      </div>
+                     <div class="card-body">
+                         <img src="IMAGE/sucettes1.jpg" alt="Croissant" width="250px" height="200px"><br><br>
+                         <p><b>Confiseries</b></p><br><div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i> <!-- étoile à moitié vide -->
+                          </div>
+                          <br><br>
+                         <a href="categoriesconfiseries.html" class="button-voir"><i class="fa-solid fa-eye fa-beat"></i></a>
+                         <a href="panier.html" class="button-achat"><i class="fa-solid fa-cart-arrow-down fa-beat"></i></a>
+                      </div>
+                       <div class="card-body">
+                         <img src="IMAGE/pain.jpg" alt="Croissant" width="250px" height="200px"><br><br>
+                         <p><b>Boulangeries</b></p><br>
+                         <div class="etoile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i> <!-- étoile à moitié vide -->
+                          </div>
+                          <br><br>
+                         <a href="categoriesboulangeries.html" class="button-voir"><i class="fa-solid fa-eye fa-beat"></i></a>
+                         <a href="panier.html" class="button-achat"><i class="fa-solid fa-cart-arrow-down fa-beat"></i></a>
+                      </div>
+                    </div>
+              </div>           
+        </section>
+    </main>
+    <br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <div class="footer-menu">
+            <div class="container-footer-fluid">
+                    <div class="col-sm-3">
+                        <!-- MON LOGO -->
+                        <div class="image-container">
+                            <img src="IMAGE/logoparfait3.png" alt="Logo" class="logo-centre" width="35%" height="70px" title="saveurs solidaires">
+                        </div>
+                        <h3 style="font-size: 35px;">Saveurs solidaires</h3><br>
+                        <p class="text-multed">&copy;2025 Tous droits réservés.</p>
+                    </div>
+                    <div class="col-sm-7">
+                        <ul style="gap: 50px;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="mentions_legales.html" style="color:  rgb(55, 55, 55);">Mentions légales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="politique_de_confidentialite.html" style="color: rgb(55, 55, 55)">Politique de
+                                    confidentialité</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="conditions_de_vente.html" style="color:  rgb(55, 55, 55)">Conditions de vente</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <!--AJOUT DE CLASSES POUR ALIGNER LES ICONES A DROITE DANS CETTE COLONNE-->
+                        <div class="socials-icons">
+                            <a href="http://www.facebook.com"><i class="fa-brands fa-facebook fa-fade" style="color:rgb(64, 60, 60);font-size: 150%;"></i></a>
+                            <a href="erreur404.html"><i class="fa-brands fa-whatsapp fa-fade" style="color: rgb(64, 60, 60);font-size: 150%;"></i></a>
+                            <a href="http://www.instagram.com"><i class="fa-brands fa-instagram fa-fade"  style="color: rgb(64, 60, 60);font-size: 150%;"></i></a>
+                            <a href="http://www.snapchat.com"><i class="fa-brands fa-snapchat fa-fade"  style="color: rgb(64, 60, 60);font-size: 150%;"></i></a>
+                        </div>
+                    </div>
+                </div>
+             <hr>
+             <div class="QR"> 
+                <h3>Vous avez des questions ou préoccupations ?</h3>
+                <p>Contactez-nous via nos réseaux sociaux ou veuillez scanner le code ci-après</p>
+                  <img src="IMAGE/jerusatresorbayindoula_gmail_com.png" alt="" width="180px" height="230px">
+             </div>
+        <br><br><br>
+         <div class="cookie-banner">
+                <p>
+                  Ce site utilise des cookies pour améliorer votre expérience.
+                  <a href="politique_de_confidentialite.html">En savoir plus</a>
+                </p>
+                <button class="accept">Accepter</button>
+                 <button class="decline">Refuser</button>
+        </div>
+    </footer>
+</body>
+</html>
