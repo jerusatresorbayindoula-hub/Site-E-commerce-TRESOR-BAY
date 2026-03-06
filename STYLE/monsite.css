@@ -66,7 +66,7 @@ body{
   box-shadow: 5px 5px 5px 5px rgba(82, 79, 79, 0.1);
 }
 .navbar-acc{
-    gap: 7%;
+   gap: 7%;
     display: flex;
     align-items: center;
     margin: 10px;
@@ -76,6 +76,15 @@ body{
     background-color: blanchedalmond;
     padding-bottom: 5px;
     padding-top: 5px;
+    padding-right: 18.1%;
+    position: fixed;
+    z-index: 1;
+    margin-top: -10px;
+    padding-left: 2%;
+    margin-left: -0.8%;
+    margin-right: -0.8%;
+    width: 100%;
+    padding-top: 1%;
 }
 .navbar-acc ul li a{
    transition:0.1s ease-in-out;
@@ -229,11 +238,18 @@ li:hover , a:hover{ /* POUR FAIRE UN SURVOL SUR LA LISTE DU MENU NAVBAR*/
 .navbar{     /* BARRE EDE NAVIGATION */
     display: flex;
     align-items: center;
-    gap: 7%;
+    gap: 9%;
     margin: 10px;
     box-shadow: 5px 5px 5px 5px rgba(82, 79, 79, 0.1);
     border-radius: 7px;
     background-color: blanchedalmond;
+    padding-right: 30%;
+    padding-left: 2%;
+    margin-left: -0.8%;
+    padding-top: 1%;
+    position: fixed;
+    z-index: 1;
+    margin-top: -1px;
    
 }
 iframe {
