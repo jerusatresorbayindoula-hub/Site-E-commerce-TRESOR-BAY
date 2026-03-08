@@ -410,6 +410,28 @@ h1:nth-child(4) { animation-delay: 0.9s; }
     font-size: 15px;
     justify-content: center;
 }
+.navbar-acc a {
+      position: relative;
+      text-decoration: none; /* enlève le soulignement par défaut */
+    }
+
+    /* ligne invisible au départ */
+.navbar-acc ul li a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px; /* place la ligne juste sous le texte */
+      width: 0;
+      top: 78%;
+      height: 3px;
+      background-color: maroon;
+      transition: width 0.3s ease; /* animation fluide */
+    }
+
+    /* au survol, la ligne s'étend */
+.navbar-acc ul li a:hover::after {
+      width: 100%;
+    }
 .button-banner{ /* BOUTON DECOUVRIR */
     background: linear-gradient(to bottom, #cbcaca, #ba6b22);
     color: white;
@@ -874,6 +896,7 @@ form{   /* FORMULAIRE DU PANIER */
   color: #303030;
   border-radius: 50px;
   margin-right: 10%;
+  margin-left: 570%;
   font-size: 13px;
   align-items: center;
   display: flex;
