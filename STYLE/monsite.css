@@ -94,12 +94,12 @@ body{
     padding-top: 10px;
     padding-left: 5px;
     padding-right: 5px;
+    text-decoration: none !important;
     transform: translateY(-10px) scale(1.1); 
 
 }
 
 nav ul li a:hover {   /* POUR CREER UN EFFET DE SURVOL SUE LE MENU DE NAVIGATION */
-    color: whitesmoke;                 /* texte devient blanc */
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 5px;
