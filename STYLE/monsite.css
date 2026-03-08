@@ -94,9 +94,7 @@ body{
     padding-top: 10px;
     padding-left: 5px;
     padding-right: 5px;
-    transform: translateY(-10px) scale(1.1);  
-    background-color: #edac7a;
-
+    transform: translateY(-10px) scale(1.1); 
 
 }
 
@@ -106,7 +104,6 @@ nav ul li a:hover {   /* POUR CREER UN EFFET DE SURVOL SUE LE MENU DE NAVIGATION
     padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 5px;
-    text-decoration: underline;
 
 
 
@@ -236,7 +233,7 @@ li:hover , a:hover{ /* POUR FAIRE UN SURVOL SUR LA LISTE DU MENU NAVBAR*/
 
 }
 .navbar{     /* BARRE EDE NAVIGATION */
-    display: flex;
+     display: flex;
     align-items: center;
     gap: 9%;
     margin: 10px;
@@ -249,7 +246,7 @@ li:hover , a:hover{ /* POUR FAIRE UN SURVOL SUR LA LISTE DU MENU NAVBAR*/
     padding-top: 1%;
     position: fixed;
     z-index: 1;
-    margin-top: -1px;
+    margin-top: -1px
    
 }
 iframe {
